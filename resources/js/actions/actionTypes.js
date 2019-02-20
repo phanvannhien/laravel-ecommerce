@@ -1,0 +1,19 @@
+export const GET_COMMENT = 'GET_COMMENT';
+export const SAVE_COMMENT = 'SAVE_COMMENT';
+export const REPLY_COMMENT = 'REPLY_COMMENT';
+export const UPDATE_COMMENT = 'UPDATE_COMMENT';
+export const UPDATE_SUBCOMMENT = 'UPDATE_SUBCOMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+
+export const GET_COMMENT_SUCCESS = 'GET_COMMENT_SUCCESS';
+export const GET_COMMENT_FAIL = 'GET_COMMENT_FAIL';
+// Messages
+
+export const GET_CONTACT = 'GET_CONTACT';
+export const GET_CONTACT_SUCCESS = 'GET_CONTACT_SUCCESS';
+export const GET_CONTACT_FAIL = 'GET_CONTACT_FAIL';
+
+export const GET_MESSAGES = 'GET_MESSAGES';
+export const SEND_MESSAGE = 'SEND_MESSAGE';
+export const START_CHAT = 'START_CHAT';
+

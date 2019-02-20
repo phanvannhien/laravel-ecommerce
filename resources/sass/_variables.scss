@@ -1,0 +1,58 @@
+
+// Body
+$body-bg: #FFF;
+
+// Typography
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #0080BF;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #DD2232;
+$orange: #FF9D00;
+$yellow: #FF9D00;
+$green: #096923;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+$border-radius:             5px;
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+
+$link-color:                $blue;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .3rem !default;
+$input-btn-padding-x:         .7rem !default;
+
+
+$link-color: #666;
+$link-hover-decoration: none;
+
+
+$h1-font-size:                $font-size-base * 1.25;
+$h2-font-size:                $font-size-base * 1.2;
+$h3-font-size:                $font-size-base * 1.15;
+$h4-font-size:                $font-size-base * 1.1;
+$h5-font-size:                $font-size-base * 1;
+$h6-font-size:                $font-size-base;
+

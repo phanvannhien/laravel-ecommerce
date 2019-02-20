@@ -1,0 +1,27 @@
+.dd-list-cat{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dd-list-cat .dd3-content{
+    padding: 7px;
+}
+
+.dd-list-cat .dd3-content:nth-child(2n  + 1){
+
+}
+
+.dd-list-cat ul{
+    list-style: none;
+}
+
+.dd-list-cat img{
+    float: left;
+}
+.dd-list-cat .content-left{
+    margin-left: 70px;
+}
+
+.attribute-items input, .attribute-items select{
+    margin-bottom: 10px;
+}

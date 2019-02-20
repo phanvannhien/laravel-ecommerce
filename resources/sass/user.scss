@@ -1,0 +1,95 @@
+#user-page-container{
+  background: #f2f6f7;
+
+  #user-sidebar{
+    padding: 2rem 0;
+
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        margin-bottom: 10px;
+        a{
+          color: #666;
+          display: block;
+          padding: 5px 12px;
+          border: 1px solid transparent;
+          &:hover{
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+          }
+          i{
+            margin-right:10px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  #primary{
+    background: #FFF;
+  }
+}
+
+
+
+#top-user{
+
+  background-image: url('~/img/bg.jpg');
+  background-size:cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  position: relative;
+
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#999999+0,383838+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(56,56,56,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(56,56,56,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(56,56,56,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#383838',GradientType=0 ); /* IE6-9 */
+
+  }
+
+
+
+  #user-wall-avatar{
+    position: relative;
+    img{
+      max-width: 100px;
+    }
+    a{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 2rem;
+      opacity: 0.3;
+    }
+  }
+}
+
+.user-list{
+  li{
+    a{
+      color: #333;
+      display: block;
+      height: 32px;
+      line-height: 32px;
+      padding: 4px 0;
+      position: relative;
+    }
+  }
+}

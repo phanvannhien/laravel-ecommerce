@@ -1,0 +1,83 @@
+.contact_lst{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    width: 220px;
+    height: 50%;
+    background: #FFF;
+    border: 1px solid #d1d1d1;
+    .contact_lst_body{
+        padding: 10px 0;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                
+                a{
+                    display: block;
+                    padding: 3px 10px;
+                    &:hover{
+                        background: #f9f9f9;
+                        cursor: pointer;
+                    }
+                }
+                .user_avatar{
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    border: 1px solid #f5f5f5;
+                    border-radius: 50%;
+                    background: #f8f8f8;
+                    text-align: center;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.message_lst{
+    position: fixed;
+    right: 230px;
+    z-index: 999;
+    bottom: 0;
+}
+
+.message_modal{
+    position: relative;
+    margin-left: 0.8rem;
+    float: left;
+    background: #FFF;
+    height: 300px;
+    bottom: 0;
+    width: 240px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 1px 1px 4px 0px #696969;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .message_modal_heading{
+        height: 35px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .message_modal_footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-top: 1px solid #f1f1f1;
+        input{
+            border: 0;
+            border-radius: 0;
+        }
+    }
+
+}
+
+.message_modal:nth-child( 2n + 1 ){
+   
+}

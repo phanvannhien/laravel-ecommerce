@@ -1,0 +1,436 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Variables
+@import 'variables';
+
+@import "select2";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~slick-carousel/slick/slick.scss';
+
+@import "~magnific-popup/src/css/main.scss";
+
+//@import "~select2/src/scss/core.scss";
+
+@import "~icheck/skins/square/_all.css";
+
+@import "~froala-editor/css/froala_editor.css";
+
+@import "~froala-editor/css/froala_style.css";
+
+@import "~toastr/toastr.scss";
+
+@import '~bootstrap-slider/src/sass/bootstrap-slider.scss';
+
+//@import "~select2-bootstrap-theme/src/select2-bootstrap.scss";
+
+@import "~animate.css";
+@import "user.scss";
+
+// /* Change the white to any color ;) */
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus,
+ input:-webkit-autofill:active  {
+   -webkit-box-shadow: 0 0 0 30px white inset;
+ }
+
+.card{
+  overflow: hidden;
+}
+
+/**
+HEADER
+ */
+
+#app.overlay{
+  position: relative;
+  &:after{
+    content: '';
+    background: rgba( 0,0,0,0.5 );
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+  }
+}
+
+header{
+  padding: 0.5rem 0;
+  background: #f0f8ff;
+  #logo{
+    img{
+      max-height: 2rem;
+    }
+    h1{
+      font-size: 1.8rem;
+
+      font-weight: 800;
+      margin-bottom: 0;
+      a{
+        color: #007ec1;
+      }
+    }
+  }
+
+  #user-area{
+    float: right;
+  }
+
+  #user-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      float: left;
+      height: 35px;
+      line-height: 35px;
+      a{
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+
+#featured-tags {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+}
+
+
+/**
+MAIN NAV
+ */
+
+main{
+  background: #f1f1f1;
+}
+
+
+#main-nav{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  li{
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    padding: 0 1rem;
+    a{
+      text-transform: uppercase;
+    }
+  }
+}
+
+ #primary{
+   #primary-inner{
+
+   }
+ }
+
+
+/**
+Search
+ */
+
+.slider.slider-horizontal{
+  width: 100%;
+}
+
+
+ /**
+ Post
+  */
+
+.price{
+  color: red;
+}
+.product-meta{
+  i.far, i.fas{
+    width: 20px;
+    color: #75b386;
+  }
+}
+
+.post-item{
+  position: relative;
+  .price{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: red;
+    color: #FFF;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+  .price.ab-top-left{
+    top: 0;
+    bottom: inherit;
+  }
+
+  .price.ab-top-right{
+    right: 0;
+    top:0;
+    left: inherit;
+    bottom: inherit;
+  }
+
+  .post-address{
+    font-size: 0.8rem;
+    color: #666;
+  }
+}
+
+
+#product-slider{
+  max-height: 310px;
+  overflow-y: hidden;
+}
+
+ .editor-container{
+   max-height: 200px;
+ }
+ #galleries{
+   background: aliceblue;
+ }
+
+ .g-item{
+   >div{
+     border: 1px solid #d1d1d1;
+     position: relative;
+     img{
+       max-width: 100%;
+     }
+     a{
+       position: absolute;
+       bottom: 0;
+       background: #ffffffab;
+       right: 0;
+       color: $red !important;
+       text-align: center;
+       display: block;
+       padding: 10px;
+     }
+   }
+ }
+
+ /**
+ BODY
+  */
+
+.block{
+  .block-head{
+    h3{
+      text-transform: uppercase;
+    }
+  }
+  .block-body{
+
+  }
+}
+
+.user-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li{
+
+  }
+  .u-item{
+    .u-img{
+      margin-right: 0.5rem;
+    }
+    .u-name{
+
+    }
+  }
+}
+
+.pagination{
+  justify-content: center;
+}
+
+.owl-carousel .owl-item .post{
+  img.post-u-avatar{
+    width: 20px;
+    height: 20px;
+    float: left;
+  }
+}
+
+.owl-carousel.owl-nav-middle{
+  .owl-nav{
+    button.owl-next{
+      right: 0;
+    }
+
+    button.owl-prev{
+      left: 0;
+    }
+
+
+
+    >button.owl-prev, >button.owl-next{
+      font-size: 3rem;
+      line-height: 1.5rem;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      margin-top: -1.5rem;
+      width: 3rem;
+      height: 3rem;
+      background: rgba(0, 0, 0, 0.28);
+      display: block;
+      position: absolute;
+      top: 50%;
+      color: #FFF;
+      &:hover{
+        background: rgba(0, 0, 0, 0.5);
+      }
+      &.disabled{
+        display: none;
+      }
+
+    }
+  }
+}
+
+
+ /**
+ Footer
+  */
+
+footer{
+  background: $blue;
+  padding: 3rem 0;
+  color: #FFF;
+  a{
+    color: #FFF;
+  }
+
+  .footer-block{
+    h3{
+      text-transform: uppercase;
+    }
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#user-slide-menu{
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  background: #FFF;
+  padding: 2rem;
+  z-index: 10;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      padding: 0.3rem 0;
+      a{
+        display: block;
+      }
+    }
+  }
+}
+
+/**
+SLICK SLIDER
+ */
+.slick-slider{
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ffffff87;
+    text-align: center;
+    margin-top: -25px;
+    line-height: 50px;
+    z-index: 1;
+    font-size: 1.4rem;
+    &:hover{
+      background: #ffffffbd;
+    }
+  }
+  .slick-prev{
+    left: 0;
+  }
+
+  .slick-next{
+    right: 0;
+  }
+}
+
+
+/**
+
+ */
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+#loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.34);
+  display: none !important;
+}
+
+body.loading{
+  #loading{
+    display: flex !important;
+  }
+}
