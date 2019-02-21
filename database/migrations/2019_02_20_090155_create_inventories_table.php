@@ -21,9 +21,9 @@ class CreateInventoriesTable extends Migration
             $table->string('contact_email',254);
             $table->string('contact_phone',20);
             $table->string('contact_fax',20);
-            $table->string('matp',20);
-            $table->string('maqh',20);
-            $table->string('xaid',20);
+            $table->integer('matp')->unsigned();
+            $table->integer('maqh')->unsigned();
+            $table->integer('xaid')->unsigned();
             $table->string('lat',50);
             $table->string('lng',50);
             $table->boolean('status')->defaultsTo(1);

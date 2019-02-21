@@ -94,4 +94,66 @@ $(function () {
     });
 
 
+    $('#sl-real-cats').select2({
+        width: '100%'
+    });
+
+    // //Initialize Select2 Elements
+    // $('#sl-cities').select2({
+    //     placeholder: "Tất cả Thành phố",
+    //     width: '100%'
+    // });
+    // $('#sl-district').select2({
+    //     placeholder: "Tất cả Quận/ Huyện",
+    //     width: '100%'
+    // });
+    // $('#sl-ward').select2({
+    //     placeholder: "Tất cả Phường/ Xã",
+    //     width: '100%'
+    // });
+
+    $('#sl-cities').on('change', function (e) {
+        $.ajax({
+            url: ajax.district,
+            dataType: 'json',
+            method: 'get',
+            data:{
+                id: $(this).val()
+            },
+            success: function(data){
+                $('#sl-district').html('');
+                $('#sl-ward').html('');
+                $.each(data, function(index, item){
+                    $('#sl-district').append('<option value="'+item.id+'">'+item.text+'</option>');
+
+                })
+            }
+        });
+
+
+    });
+
+    $('#sl-district').on('change', function (e) {
+
+        $.ajax({
+            url: ajax.ward,
+            dataType: 'json',
+            method: 'get',
+            data:{
+                id: $(this).val()
+            },
+            success: function(data){
+                $('#sl-ward').html('');
+                $.each(data, function(index, item){
+                    $('#sl-ward').append('<option value="'+item.id+'">'+item.text+'</option>');
+
+                })
+            }
+        });
+
+
+
+
+    });
+
 })

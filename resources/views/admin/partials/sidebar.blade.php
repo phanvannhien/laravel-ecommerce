@@ -60,6 +60,11 @@
                         <a href="{{ route('investor.index') }}">
                             <i class="fa fa-user"></i> <span> @lang('investor.investor')</span></a>
                     </li>
+
+                    <li class="{{ ($currentRouteName->getPrefix() == 'attribute') ? 'active' : '' }}">
+                        <a href="{{ route('attribute.index') }}">
+                            <i class="fa fa-user"></i> <span> @lang('attribute.attribute')</span></a>
+                    </li>
                 </ul>
             </li>
 
@@ -126,7 +131,7 @@
 
 
 
-            <li class="treeview {{ strrpos($currentRouteName->getPrefix(), 'admin_user')?'active':'' }}">
+            <li class="treeview {{ strrpos($currentRouteName->getPrefix(), 'system')?'active':'' }}">
                 <a href="#">
                     <i class="fa fa-volume-control-phone"></i> <span>Hệ thống</span>
                     <span class="pull-right-container">
@@ -135,8 +140,28 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="">
+                        <a href="{{ route('currency.index') }}">
+                            <i class="fa fa-user"></i> @lang('currency.currency')
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('inventory.index') }}">
+                            <i class="fa fa-user"></i> @lang('inventory.inventory')
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('payment.index') }}">
+                            <i class="fa fa-user"></i> Payments
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('shipping.index') }}">
+                            <i class="fa fa-user"></i> Shipping
+                        </a>
+                    </li>
+                    <li class="">
                         <a href="">
-                            <i class="fa fa-user"></i> Người dùng
+                            <i class="fa fa-user"></i> @lang('user.user')
                         </a>
                     </li>
                 </ul>

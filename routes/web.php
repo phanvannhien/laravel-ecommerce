@@ -197,6 +197,8 @@ Route::group([
                 Route::post('product/remove','ProductController@remove')->name('product.remove');
                 Route::resource('investor','Admin\InvestorController');
                 Route::resource('type','Admin\ProductTypeController');
+
+                Route::resource('attribute','Admin\AttributeController');
             });
 
             //Route::resource('contact','Admin\ContactController');
@@ -219,6 +221,11 @@ Route::group([
                 Route::post('/admin-user/{id}/change-password',array('as'=>'admin_user.change_password.save', 'uses' => 'Admin\AdminController@save_change_password'));
 
                 Route::resource('currency','Admin\CurrencyController');
+                Route::resource('inventory','Admin\StoreController');
+                Route::resource('shipping','Admin\ShippingController');
+                Route::get('payment','Admin\PaymentController@index')->name('payment.index');
+
+
 
             });
 

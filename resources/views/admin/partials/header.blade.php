@@ -41,6 +41,14 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script>
+        var ajax = {
+            district : '{{ route('ajax.district') }}',
+            ward: '{{ route('ajax.ward') }}',
+            add_favorite: '{{ route('ajax.add_favorite') }}',
+            add_friend: '{{ route('ajax.add_friend') }}',
+        }
+    </script>
 </head>
 <body class="skin-blue sidebar-mini">
 <div id="app" class="wrapper">
